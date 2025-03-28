@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements and Forms Assignment</title>
+
+</head>
+           
+<body>
+    
+    <p>Ordered list with roman numerals </p>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>mysql</li>
+        <li>plp</li>
+    </ol>
+    
+               <!--addition of an image from pixels.com-->
+    <img src="https://pixels.com/shop/framed+prints" alt="image" 
+    style="width: 500px;height: 600px;">
+
+    <table border ="1">
+        <caption>CONTACTS TABLE</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>address</th>
+                <th>Phone </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>doe@gmail.com</td>
+            <td>30200-22</td>
+            <td>0700000000</td>
+        </tr>
+        <tr>
+            <td>michael</td>
+            <td>michael@gmail.com</td>
+            <td>30200-23</td>
+            <td>0720000000</td>
+        </tr>
+        <tr>
+            <td>Ian Githinji</td>
+            <td>ian@gmail.com</td>
+            <td>30200-24</td>
+            <td>0703400000</td>
+        </tr>
+        <tr>
+            <td>teddy Omolo</td>
+            <td>teddy@gmail.com</td>
+            <td>303300-22</td>
+            <td>07023400000</td>
+        </tr>
+        </tbody>
+    
+    </table>
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+            text-align: center;
+            background-color: #03f35f;
+        }
+table{
+            width: 5%;
+        }
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table{
+    border-spacing: 30px;
+}   
+</style>  
+
+
+<!--Registration Form-->
+<fieldset> 
+    <legend>Registration Form</legend>
+    <form action="index.html" method="post">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" required><br><br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" required><br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password" required><br><br>
+        <label for="Date">Date:</label>
+        <input type="date" id="Date" name="Date" required><br><br>
+        <label for ="Courses">select a course</label>
+        <select name="Courses" id="Courses" size="1" required>
+            <option value="select">select a course</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="mysql">mysql</option>
+            <option value="plp">plp</option>
+        </select><br><br>
+<input type="reset" value ="Reset" >     
+<input type="submit" value="Register">
+</fieldset>
+
+<!--Radio Input-->
+<p>Choose your favorite Web language </p>
+<form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+</form>
+
+<!--Checkbox Input-->
+<p>Choose your favorite Web language </p>
+<form>
+    <input type="checkbox" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+</form>
+</body>
+<footer>
+    <p>Copyright &copy; Feb 2025</p>
+    <p>All rights reserved</p>
+</html>
+
